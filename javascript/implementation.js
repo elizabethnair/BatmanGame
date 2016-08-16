@@ -20,9 +20,21 @@ function moveBgLeft(x) {
     @returns { object }
     @desc returns all the above params but flips a switch setting val to false
 */
-function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, leftArrowPressed = false, shiftKeyPressed = false ) {
+function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, 
+    leftArrowPressed = false, shiftKeyPressed = false ) {
     // you need a bunch of if statements here...
-
+    if (keyCode === 38) {
+        upArrowPressed = true
+    }
+    if (keyCode === 40) {
+        downArrowPressed = true
+    }
+    if (keyCode === 39) {
+        rightArrowPressed = true
+    }
+    if (keyCode === 37) {
+        leftArrowPressed = true
+    }
 
     return {
         upArrowPressed,
@@ -44,7 +56,8 @@ function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = 
     @returns { object }
     @desc returns all the above params but flips a switch setting val to true 
 */
-function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, leftArrowPressed = false, shiftKeyPressed = false ) {
+function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, leftArrowPressed = false, 
+    shiftKeyPressed = false ) {
     // you need a bunch of if statements here...
 
 
