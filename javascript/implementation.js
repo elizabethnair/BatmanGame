@@ -5,8 +5,8 @@
     @desc return the input param minus 10 (or some other value that you like)
 */
 function moveBgLeft(x) {
-    const speed = x - 10
-    return speed
+    const speed = x - 10;
+    return speed;
 }
 
 /*
@@ -24,17 +24,17 @@ function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = 
     leftArrowPressed = false, shiftKeyPressed = false ) {
     // you need a bunch of if statements here...
     if (keyCode === 38) {
-        upArrowPressed = true
-    }
+        upArrowPressed = false
+    };
     if (keyCode === 40) {
-        downArrowPressed = true
-    }
+        downArrowPressed = false
+    };
     if (keyCode === 39) {
-        rightArrowPressed = true
+        r;ightArrowPressed = false
     }
     if (keyCode === 37) {
-        leftArrowPressed = true
-    }
+        leftArrowPressed = false
+    };
 
     return {
         upArrowPressed,
@@ -60,6 +60,18 @@ function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = 
     shiftKeyPressed = false ) {
     // you need a bunch of if statements here...
 
+    if (keyCode === 38) {
+        upArrowPressed = true
+    };
+    if (keyCode === 40) {
+        downArrowPressed = true
+    };
+    if (keyCode === 39) {
+        rightArrowPressed = true
+    };
+    if (keyCode === 37) {
+        leftArrowPressed = true
+    };
 
     return {
         upArrowPressed,
@@ -76,4 +88,8 @@ function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = 
     @returns {number}
     @desc subtracts a value from y to simulate jump
 */
-function shouldJumpNow() {}
+function shouldJumpNow(y) {
+    const jump = y - 20;
+    return jump;
+
+}
