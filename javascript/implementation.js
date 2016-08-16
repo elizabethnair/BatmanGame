@@ -56,7 +56,7 @@ function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = 
     @returns { object }
     @desc returns all the above params but flips a switch setting val to true 
 */
-function keyUpHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, leftArrowPressed = false, 
+function keyDownHandler( keyCode = 0, upArrowPressed = false, rightArrowPressed = false, downArrowPressed = false, leftArrowPressed = false, 
     shiftKeyPressed = false ) {
     // you need a bunch of if statements here...
 
